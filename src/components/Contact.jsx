@@ -10,12 +10,14 @@ export default function Contact() {
 
         {/* Sub text */}
         <p className="text-secondary fs-5 mb-4">
-          Available for <strong>freelance</strong> and
-          <strong> full-time</strong> roles
+          Available for <strong>freelance</strong> and{" "}
+          <strong>full-time</strong> roles
         </p>
 
         {/* CTA Buttons */}
         <div className="d-flex justify-content-center flex-wrap gap-3 mb-4">
+
+          {/* WhatsApp */}
           <a
             href="https://wa.me/7010790395"
             target="_blank"
@@ -26,13 +28,17 @@ export default function Contact() {
             WhatsApp Me
           </a>
 
+          {/* Email – Desktop + Mobile Safe */}
           <a
-            href="mailto:naveekumar0312@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=naveekumar0312@gmail.com&su=Freelance%20Inquiry&body=Hi%20Naveen,%0A%0AI%20would%20like%20to%20connect%20with%20you%20regarding%20a%20project.%0A%0ARegards,"
+            target="_blank"
+            rel="noreferrer"
             className="btn btn-outline-light px-5 py-2"
           >
             <i className="bi bi-envelope-fill me-2"></i>
             Email Me
           </a>
+
         </div>
 
         {/* Divider */}
@@ -49,7 +55,7 @@ export default function Contact() {
         {/* Social Icons */}
         <div className="d-flex justify-content-center gap-4 fs-3">
           <a
-            href="https://www.linkedin.com/in/your-linkedin-id"
+            href="https://www.linkedin.com/"
             target="_blank"
             rel="noreferrer"
             className="social-icon text-info"
