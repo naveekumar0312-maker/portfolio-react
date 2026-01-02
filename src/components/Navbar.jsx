@@ -53,7 +53,7 @@ export default function Navbar() {
             setActive("home");
           }}
         >
-          Naveen.dev
+          Naveen.developer
         </a>
 
         {/* TOGGLER */}
