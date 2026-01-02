@@ -9,6 +9,16 @@ export default function Hero() {
       {/* Background Image Overlay */}
       <div className="hero-bg-overlay"></div>
 
+      {/* FLOATING WHATSAPP ICON */}
+      <a
+        href="https://wa.me/7010790395"
+        target="_blank"
+        rel="noreferrer"
+        className="whatsapp-float"
+      >
+        <i className="bi bi-whatsapp"></i>
+      </a>
+
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
@@ -20,45 +30,38 @@ export default function Hero() {
           {/* LEFT CONTENT */}
           <div className="col-lg-7 text-lg-start text-center">
 
-            {/* Name */}
             <h1 className="display-3 fw-bold gradient-text mb-3">
               Naveen Kumar
             </h1>
 
-            {/* Role */}
             <p className="fs-4 text-light mb-3">
               Python Full Stack Developer
             </p>
 
-            {/* Tech Stack */}
             <p className="text-info mb-4">
-              React • Django • REST APIs • MySQL • MERN
+              React • Django • REST APIs • MySQL 
             </p>
 
-            {/* PROFESSIONAL SUMMARY */}
             <p className="hero-summary mb-4">
               Results-driven <strong>Python Full Stack Developer</strong> with
               hands-on experience in building scalable, secure, and responsive
-              web applications. Strong expertise in
-              <strong> Django, REST APIs, MySQL</strong> and modern frontend
-              development using <strong>React</strong>
+              web applications using <strong>Django, REST APIs, MySQL</strong>{" "}
+              and modern frontend development with <strong>React</strong>.
             </p>
 
             {/* CTA BUTTONS */}
             <div className="d-flex flex-wrap gap-3 justify-content-lg-start justify-content-center">
+
               <a href="#projects" className="btn btn-glow px-5 py-2">
                 <i className="bi bi-folder2-open me-2"></i>
                 View Projects
               </a>
 
-              <a href="#contact" className="btn btn-outline-light px-5 py-2">
-                <i className="bi bi-chat-dots-fill me-2"></i>
-                Contact Me
-              </a>
             </div>
 
             {/* SOCIAL ICONS */}
             <div className="d-flex gap-4 fs-3 mt-4 justify-content-lg-start justify-content-center">
+
               <a
                 href="https://www.linkedin.com/in/your-linkedin-id"
                 target="_blank"
@@ -78,11 +81,14 @@ export default function Hero() {
               </a>
 
               <a
-                href="mailto:naveen@email.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=naveekumar0312@gmail.com"
+                target="_blank"
+                rel="noreferrer"
                 className="social-icon text-danger"
               >
                 <i className="bi bi-envelope-fill"></i>
               </a>
+
             </div>
           </div>
 

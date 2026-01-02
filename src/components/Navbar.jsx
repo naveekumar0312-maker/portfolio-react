@@ -8,12 +8,12 @@ export default function Navbar() {
     document.documentElement.dataset.theme || "dark"
   );
 
-  /* SCROLL EFFECT */
+  /* SCROLL EFFECT + ACTIVE LINK */
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 20);
 
-      const sections = ["projects", "skills", "contact"];
+      const sections = ["home", "projects", "skills", "contact"];
       sections.forEach((id) => {
         const el = document.getElementById(id);
         if (el) {
@@ -60,6 +60,7 @@ export default function Navbar() {
         <button
           className="navbar-toggler border-0"
           type="button"
+          aria-label="Toggle navigation"
           onClick={() => setOpen(!open)}
         >
           <span className="navbar-toggler-icon"></span>
@@ -68,6 +69,23 @@ export default function Navbar() {
         {/* MENU */}
         <div className={`collapse navbar-collapse ${open ? "show" : ""}`}>
           <ul className="navbar-nav ms-auto align-items-lg-center gap-lg-4 mt-4 mt-lg-0">
+
+            {/* HOME */}
+            <li className="nav-item">
+              <a
+                className={`nav-link nav-premium ${
+                  active === "home" ? "active-link" : ""
+                }`}
+                href="#home"
+                onClick={() => {
+                  setOpen(false);
+                  setActive("home");
+                }}
+              >
+                <i className="bi bi-house-fill me-2"></i>
+                Home
+              </a>
+            </li>
 
             {/* PROJECTS */}
             <li className="nav-item">
