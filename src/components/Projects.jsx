@@ -48,6 +48,7 @@ const projects = [
     description:
       "Modern and responsive developer portfolio built using React, Vite, and Bootstrap with premium UI design.",
     tech: ["React", "Vite", "Bootstrap", "CSS"],
+    live: "https://navee-portfolio.netlify.app/",
     github: "https://github.com/naveekumar0312-maker/portfolio-react",
   },
 ];
